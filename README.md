@@ -38,7 +38,7 @@ Here are step by step instructions:
     - You should now be able to browse to `http://localhost:5173` and see the root view
     - Click at the `/team/` link and see the team view.
 
-# You task:
+# Your task:
 
 ## Django backend:
 
@@ -100,7 +100,7 @@ corresponding TailwindCSS class name is.
 # Submission
 
 You may make as many commits as you like. When you are done, please make sure
-that all changes are committed and then zip the entire `assigment-full-stack`
+that all changes are committed and then zip the entire `assignment-full-stack`
 folder and send it to us.
 
 # Questions

@@ -64,7 +64,7 @@ At The Artling we use [Remix.run](https://remix.run/) as our frontend framework
 and [TailwindCSS](https://tailwindcss.com/) as our CSS framework.
 
 Your task is to make the `/team/` view look like the two screenshots provided 
-[here]() and [here](). As you can see, we use responsive design, so the view
+[here](https://github.com/TheArtling/assignment-full-stack/blob/master/mobile.png) and [here](https://github.com/TheArtling/assignment-full-stack/blob/master/desktop.png). As you can see, we use responsive design, so the view
 looks slightly different on mobile vs. on desktop.
 
 The file you need to work on is `team.tsx`. We have already queried the Django
@@ -77,6 +77,9 @@ in that file and use `font-serif` and `font-sansSerif` appropriately on all
 elements that contain text. For the distances between all the elements you can
 use the `mt-6`, `ml-6`, `mr-6`, `mx-6`, `my-6` classes. The gap between the grid
 items is `gap-4`.
+
+Tip: To render the avatar placeholder image, you can use `http://localhost:8000/media/IMAGE_FILENAME.png`. The filename is part of the data that the view has access
+to.
 
 To keep things simple, only work in the `team.tsx` file. You do not need to
 create components in separate files for the elements that you will create. Just

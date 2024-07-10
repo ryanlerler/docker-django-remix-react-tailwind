@@ -2,4 +2,4 @@ run:
 	./manage.py runserver 0.0.0.0:8000
 
 test:
-	pytest -xs  ./dummyproject --cov ./dummyproject --cov-report html --cov-report term-missing:skip-covered --ds=dummyproject.settings --disable-pytest-warnings
+	pytest -xs  ./ --cov ./ --cov-report html --cov-report term-missing:skip-covered --ds=dummyproject.settings --disable-pytest-warnings

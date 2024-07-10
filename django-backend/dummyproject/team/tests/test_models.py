@@ -11,3 +11,8 @@ class TestMember:
         assert obj.pk, (
             'Should create an instance of Member'
         )
+
+    def test_get_member_since_str(self):
+        # TODO: implement tests in this single test function that guarantee 100%
+        # test coverage for the models.py file
+        pass

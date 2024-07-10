@@ -1,2 +1,2 @@
 [run]
-omit = *asgi.py, *urls.py, *wsgi.py, dummyproject/utils.py
+omit = manage.py, team/migrations/*, *asgi.py, *urls.py, *wsgi.py, dummyproject/utils.py

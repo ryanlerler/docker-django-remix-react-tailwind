@@ -3,13 +3,15 @@ import { useLoaderData } from "@remix-run/react"
 import axios from "axios"
 
 export default function TeamView() {
-  const data = useLoaderData()
+  const data = useLoaderData<any>()
 
   console.log({data});
 
   return (
-      <main>
-          <h1 className="font-serif">Team View</h1>
+      <main className="mx-6 md:mx-auto md:container ">
+          <h1 className="font-serif text-h1">The Team</h1>
+          {/* You can delete the line below and replace it with proper view markup  */}
+          <div>{JSON.stringify(data)}</div>
       </main>
   )
 }

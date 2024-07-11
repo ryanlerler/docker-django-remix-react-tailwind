@@ -105,15 +105,13 @@ folder and send it to us.
 
 # Questions
 
-If you have any questions, please do not hesitate to reach out to 
+If you have any questions or issues with the set up, please do not hesitate to reach out to 
 `pengyu at theartling dot com`.
 
 # Grading
 
 For this assignment, we will grade you on the following criteria:
 
-- Are you able to get the Docker containers running?
-- Are you able to install plugins in VSCode and connect to the containers?
 - Are you able to write clean Python code?
 - Are you able to write 100% test coverage for your code?
 - Are you able to create a frontend view with React based on a given screenshot?

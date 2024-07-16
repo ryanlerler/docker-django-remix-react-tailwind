@@ -118,3 +118,4 @@ For this assignment, we will grade you on the following criteria:
 - Are you able to use TailwindCSS, especially it's grid system?
 # docker-django-remix-react-tailwind
 # docker-django-remix-react-tailwind
+# docker-django-remix-react-tailwind

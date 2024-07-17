@@ -1,6 +1,8 @@
 """Models for the team app."""
 
 from django.db import models
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 
 class Member(models.Model):
     """
@@ -24,4 +26,18 @@ class Member(models.Model):
     def get_member_since_str(self):
         # TODO: use relativedelta to compute a string like this based on the
         # date_joined field:
-        return '1 year, 10 months, 4 days'
+        # return '1 year, 10 months, 4 days'
+
+        # Get the difference in years, months, and days between today's date and each member's join date
+        delta = relativedelta(datetime.today(), self.date_joined)
+
+        # Helper function for pluralization if the number of years/ months/ days is a plural
+        def pluralize(value, singular, plural):
+            return f"{value} {singular if value == 1 else plural}"
+
+        # Format the output as a string
+        years_str = pluralize(delta.years, 'year', 'years')
+        months_str = pluralize(delta.months, 'month', 'months')
+        days_str = pluralize(delta.days, 'day', 'days')
+
+        return f"{years_str}, {months_str}, {days_str}"

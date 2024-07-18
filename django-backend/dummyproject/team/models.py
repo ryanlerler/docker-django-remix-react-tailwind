@@ -24,9 +24,6 @@ class Member(models.Model):
         return self.name
 
     def get_member_since_str(self):
-        # TODO: use relativedelta to compute a string like this based on the
-        # date_joined field:
-        # return '1 year, 10 months, 4 days'
 
         # Get the difference in years, months, and days between today's date and each member's join date
         delta = relativedelta(datetime.today(), self.date_joined)
